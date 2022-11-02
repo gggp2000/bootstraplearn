@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网格系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        <p>Bootstrap5网格系统规则</p>
+        <ol>
+            <li>网格每一行都要放到container容器里</li>
+            <li>使用row行来创建水平的列组</li>
+            <li>内容需要放置到列中，且只有列可以是行的子节点</li>
+            <li>预定义的类可以快速制作网格布局</li>
+            <li>网格列是通过跨越制定的12个列来创建</li>
+        </ol>
+    </div>
+    <div class="container-fluid mt-3">
+        <h1>创建等宽的列</h1>
+        <p>创建三个等宽列，尝试在class=row 的div中添加新的col，会显示四个列</p>
+        <div class="row">
+            <div class="col p-3 bg-primary text-white">.col</div>
+            <div class="col p-3 bg-dark text-white">.col</div>
+            <div class="col p-3 bg-primary text-white">.col</div>
+            <div class="col p-3 border">.col</div>
+        </div>
+        <h1>等宽响应式列</h1>
+        <p>移动设备上，屏幕宽度<576px时，四个列上下堆叠</p>
+        <div class="row">
+            <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+            <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+            <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+            <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+        </div>
+        <h1>不等宽响应式列</h1>
+        <p>移动设备上，屏幕宽度<576px时,列上下堆叠</p>
+        <div class="row">
+            <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+            <div class="col-sm-9 p-3 bg-dark text-white">.col</div>
+        </div>
+        <h1>只设置某一列的宽度</h1>
+        <p>某一列宽度确定，剩余的自动均分</p>
+        <div class="row">
+            <div class="col bg-success">.col</div>
+            <div class="col-9 bg-warning">.col</div>
+            <div class="col bg-light">.col</div>
+        </div>
+        <h1>平板与桌面的网格布局</h1>
+        <p>演示：桌面设备的显示器上两个列宽度各50%，但平板上左侧25%，右侧75%，手机上堆叠显示</p>
+        <div class="row">
+            <div class="col-sm-4 col-md-6 p-5 bg-success">.col</div>
+            <div class="col-sm-8 col-md-6 p-5 bg-info">.col</div>
+        </div>
+        <h1>嵌套列</h1>
+        <p>一列中嵌套着两个列</p>
+        <div class="row">
+            <div class="col-8 bg-primary p-4">.col-8
+                <div class="row">
+                    <div class="col-6 bg-info p-4 border">.col-6</div>
+                    <div class="col-6 bg-info p-4 border">.col-6</div>
+
+                </div>
+            </div>
+            <div class="col-4 bg-success p-4">.col-4</div>
+        </div>
+    </div>
+</body>
+</html>
