@@ -57,14 +57,26 @@
         <h1>嵌套列</h1>
         <p>一列中嵌套着两个列</p>
         <div class="row">
-            <div class="col-8 bg-primary p-4">.col-8
+            <div class="col-sm-8 bg-primary p-4">.col-8
                 <div class="row">
-                    <div class="col-6 bg-info p-4 border">.col-6</div>
-                    <div class="col-6 bg-info p-4 border">.col-6</div>
-
+                    <div class="col-sm-6 bg-info p-4 border">.col-6</div>
+                    <div class="col-sm-6 bg-info p-4 border">.col-6</div>
                 </div>
             </div>
-            <div class="col-4 bg-success p-4">.col-4</div>
+            <div class="col-sm-4 bg-success p-4">.col-4</div>
+        </div>
+        <h1>偏移列</h1>
+        <p>偏移效果，可左右调整某个列的位置</p>
+        <div class="row">
+            <div class="col-md-4 bg-info p-4">.col-md-4</div>
+            <div class="col-md-4 offset-md-1 bg-success p-4">.col-md-4  .offset-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-1 bg-info p-4">.col-md-3 offset-md-1</div>
+            <div class="col-md-2 offset-md-1 bg-info p-4">.col-md-2 offset-md-1</div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 offset-md-4 bg-primary text-white p-4">底部</div>
         </div>
     </div>
 </body>
